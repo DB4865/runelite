@@ -170,7 +170,7 @@ public class BarbarianAssaultPlugin extends Plugin
 
 
 	@Subscribe
-	public void onMenuOpen(MenuEntryAdded event)
+	public void onMenuEntryAdded(MenuEntryAdded event)
 	{
 		if (config.removeWrong() && overlay.getCurrentRound() != null && event.getTarget().endsWith("horn"))
 		{
